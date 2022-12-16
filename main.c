@@ -13,7 +13,7 @@ int* reverse_tab(int* tab, int n){
     return newTab;
 	}
 
-// fonction qui convertit la partie enti�re d'un nombre r�el en un nombre binaire
+// fonction qui convertit la partie entiere d'un nombre reel en un nombre binaire
 int* toBinary(float n, int *nOfBits){
     int number = (int)n;
     int* binary = (int*)malloc(sizeof(int)*32);
@@ -28,11 +28,11 @@ int* toBinary(float n, int *nOfBits){
     return reverse_tab(binary,numberOfBits);
 
 }
-// fonction qui convertit la partie d�cimale d'un nombre r�el en un nombre binaire
+// fonction qui convertit la partie decimale d'un nombre reel en un nombre binaire
 int* decimalToBinary(float number, int numberBits){
-    // on va prendre la partie entiere du nombre r�el
+    // on va prendre la partie entiere du nombre reel
     int formatInt = (int)number;
-    // (number-formatInt) => il nous donne la partie decimale du nombre r�el ex: 0.5845
+    // (number-formatInt) => il nous donne la partie decimale du nombre reel ex: 0.5845
     float decimal = (number-formatInt) * 2;
 
     int* binary = (int*)malloc(sizeof(int)*numberBits);
@@ -48,7 +48,7 @@ int* decimalToBinary(float number, int numberBits){
     return binary;
 
 }
-// fonction qui represente un nombre r�el sous la forme de la norme IEEE754 (simple pr�cision)
+// fonction qui represente un nombre reel sous la forme de la norme IEEE754 (simple precision)
 void ieee754(float num){
     int signe = 0;
     float floatNumber = num;
